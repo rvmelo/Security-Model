@@ -1,0 +1,7 @@
+Se não estiver funcionando pelo gdb por operção não permitida então:
+
+entre como sudo -> sudo -i
+
+depois entre no diretorio do programa e execute-os nao antes de digitar o comando abaixo:
+
+echo 0 > /proc/sys/kernel/yama/ptrace_scope

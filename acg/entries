@@ -1,0 +1,27 @@
+internet webServer
+webServer webServer
+webServer fileServer
+fileServer fileServer
+workStation workStation
+
+--------------------------------------------
+
+internet 
+192.168.25.36
+0
+
+internet
+192.158.25.28
+0
+
+192.168.25.36
+192.168.25.36
+3
+
+internet
+192.168.25.36
+0
+
+192.168.25.36
+192.168.25.36
+0

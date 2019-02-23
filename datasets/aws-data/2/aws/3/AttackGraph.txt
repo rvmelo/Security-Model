@@ -1,0 +1,68 @@
+1,"execCode('172.31.17.74',someUser)","OR",0
+2,"RULE 2 (remote exploit of a server program)","AND",0
+3,"netAccess('172.31.17.74',tcp,'8834')","OR",0
+4,"RULE 5 (multi-hop access)","AND",0
+5,"hacl('172.31.17.74','172.31.17.74',tcp,'8834')","LEAF",1
+4,5,-1
+4,1,-1
+3,4,-1
+6,"RULE 5 (multi-hop access)","AND",0
+7,"hacl('172.31.27.71','172.31.17.74',tcp,'8834')","LEAF",1
+6,7,-1
+8,"execCode('172.31.27.71',someUser)","OR",0
+9,"RULE 2 (remote exploit of a server program)","AND",0
+10,"netAccess('172.31.27.71',tcp,'25')","OR",0
+11,"RULE 5 (multi-hop access)","AND",0
+12,"hacl('172.31.17.74','172.31.27.71',tcp,'25')","LEAF",1
+11,12,-1
+11,1,-1
+10,11,-1
+13,"RULE 5 (multi-hop access)","AND",0
+14,"hacl('172.31.27.71','172.31.27.71',tcp,'25')","LEAF",1
+13,14,-1
+13,8,-1
+10,13,-1
+15,"RULE 6 (direct network access)","AND",0
+16,"hacl(internet,'172.31.27.71',tcp,'25')","LEAF",1
+15,16,-1
+17,"attackerLocated(internet)","LEAF",1
+15,17,-1
+10,15,-1
+9,10,-1
+18,"networkServiceInfo('172.31.27.71',safari,tcp,'25',someUser)","LEAF",1
+9,18,-1
+19,"vulExists('172.31.27.71','CVE-2013-2566',safari,remoteExploit,privEscalation)","LEAF",1
+9,19,-1
+8,9,-1
+20,"RULE 2 (remote exploit of a server program)","AND",0
+20,10,-1
+20,18,-1
+21,"vulExists('172.31.27.71','CVE-2015-2808',safari,remoteExploit,privEscalation)","LEAF",1
+20,21,-1
+8,20,-1
+22,"RULE 2 (remote exploit of a server program)","AND",0
+22,10,-1
+23,"networkServiceInfo('172.31.27.71',tomcat,tcp,'25',someUser)","LEAF",1
+22,23,-1
+24,"vulExists('172.31.27.71','CVE-2007-1858',tomcat,remoteExploit,privEscalation)","LEAF",1
+22,24,-1
+8,22,-1
+6,8,-1
+3,6,-1
+25,"RULE 6 (direct network access)","AND",0
+26,"hacl(internet,'172.31.17.74',tcp,'8834')","LEAF",1
+25,26,-1
+25,17,-1
+3,25,-1
+2,3,-1
+27,"networkServiceInfo('172.31.17.74',nessus,tcp,'8834',someUser)","LEAF",1
+2,27,-1
+28,"vulExists('172.31.17.74','CVE-2018-1147',nessus,remoteExploit,privEscalation)","LEAF",1
+2,28,-1
+1,2,-1
+29,"RULE 2 (remote exploit of a server program)","AND",0
+29,3,-1
+29,27,-1
+30,"vulExists('172.31.17.74','CVE-2018-1148',nessus,remoteExploit,privEscalation)","LEAF",1
+29,30,-1
+1,29,-1

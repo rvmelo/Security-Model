@@ -1,0 +1,16 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	weird
+#open	2018-03-21-23-19-48
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	name	addl	notice	peer
+#types	time	string	addr	port	addr	port	string	string	bool	string
+1521684917.854345	-	-	-	-	-	unknown_protocol_2	-	F	bro
+1521684926.372088	CR521APNBNBOTZQ8e	192.168.25.2	38898	216.58.202.238	443	bad_TCP_checksum	-	F	bro
+1521684942.228368	-	-	-	-	-	dns_unmatched_msg	-	F	bro
+1521684942.228368	-	-	-	-	-	dns_unmatched_msg	-	F	bro
+1521685005.711255	-	-	-	-	-	dns_unmatched_msg	-	F	bro
+1521685005.711255	-	-	-	-	-	dns_unmatched_msg	-	F	bro
+1521685005.711255	-	-	-	-	-	dns_unmatched_msg	-	F	bro
+#close	2018-03-21-23-19-48

@@ -1,0 +1,24 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dns
+#open	2018-03-21-23-19-48
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
+#types	time	string	addr	port	addr	port	enum	count	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
+1521684920.112139	CzrCr51tDLHQfYQsnc	fe80::1c45:7af1:dba6:bac2	5353	ff02::fb	5353	udp	0	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1521684929.123143	CzrCr51tDLHQfYQsnc	fe80::1c45:7af1:dba6:bac2	5353	ff02::fb	5353	udp	0	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1521684920.108051	Cn7CO93rCPty4KNX43	192.168.25.6	5353	224.0.0.251	5353	udp	0	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1521684929.119115	Cn7CO93rCPty4KNX43	192.168.25.6	5353	224.0.0.251	5353	udp	0	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1521684956.152026	CCm8NI3Ia7TazbZDD9	192.168.25.6	5353	224.0.0.251	5353	udp	0	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1521684956.155996	CcoZVU1gptUx9ukpRj	fe80::1c45:7af1:dba6:bac2	5353	ff02::fb	5353	udp	0	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1521684977.449959	CAtuI04DsiHNbSkp7g	192.168.25.48	137	192.168.25.255	137	udp	34703	JAVGURU	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
+1521684978.166761	CAtuI04DsiHNbSkp7g	192.168.25.48	137	192.168.25.255	137	udp	34703	JAVGURU	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
+1521684978.883490	CAtuI04DsiHNbSkp7g	192.168.25.48	137	192.168.25.255	137	udp	34703	JAVGURU	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
+1521684977.451245	CD3JnZ2LPmmSNt5yQ3	fe80::ed92:8289:cb20:315c	61934	ff02::1:3	5355	udp	38919	javguru	1	C_INTERNET	1	A	-	-	F	F	F	F	0	-	-	F
+1521684977.859495	CD3JnZ2LPmmSNt5yQ3	fe80::ed92:8289:cb20:315c	61934	ff02::1:3	5355	udp	38919	javguru	1	C_INTERNET	1	A	-	-	F	F	F	F	0	-	-	F
+1521684977.454218	CVUiqXLxTNRL9hZEd	192.168.25.48	61934	224.0.0.252	5355	udp	38919	javguru	1	C_INTERNET	1	A	-	-	F	F	F	F	0	-	-	F
+1521684977.861161	CVUiqXLxTNRL9hZEd	192.168.25.48	61934	224.0.0.252	5355	udp	38919	javguru	1	C_INTERNET	1	A	-	-	F	F	F	F	0	-	-	F
+1521685037.352842	CjujXt2DsO7JaOiTG	192.168.25.6	5353	224.0.0.251	5353	udp	0	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1521685037.354773	Cx1MLilZN0LAUB6Je	fe80::1c45:7af1:dba6:bac2	5353	ff02::fb	5353	udp	0	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+#close	2018-03-21-23-19-48

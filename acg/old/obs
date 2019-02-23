@@ -1,0 +1,2 @@
+Criar um método para deletar um caminho inteiro dentro do acg caso o último alerta desse caminho tenha excedido o threshold
+e zerar todos os graph_node node->alerts_mapped

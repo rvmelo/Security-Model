@@ -1,0 +1,33 @@
+1,"execCode('172.31.46.216',someUser)","OR",0
+2,"RULE 2 (remote exploit of a server program)","AND",0
+3,"netAccess('172.31.46.216',tcp,'25')","OR",0
+4,"RULE 5 (multi-hop access)","AND",0
+5,"hacl('172.31.46.216','172.31.46.216',tcp,'25')","LEAF",1
+4,5,-1
+4,1,-1
+3,4,-1
+6,"RULE 6 (direct network access)","AND",0
+7,"hacl(internet,'172.31.46.216',tcp,'25')","LEAF",1
+6,7,-1
+8,"attackerLocated(internet)","LEAF",1
+6,8,-1
+3,6,-1
+2,3,-1
+9,"networkServiceInfo('172.31.46.216',safari,tcp,'25',someUser)","LEAF",1
+2,9,-1
+10,"vulExists('172.31.46.216','CVE-2013-2566',safari,remoteExploit,privEscalation)","LEAF",1
+2,10,-1
+1,2,-1
+11,"RULE 2 (remote exploit of a server program)","AND",0
+11,3,-1
+11,9,-1
+12,"vulExists('172.31.46.216','CVE-2015-2808',safari,remoteExploit,privEscalation)","LEAF",1
+11,12,-1
+1,11,-1
+13,"RULE 2 (remote exploit of a server program)","AND",0
+13,3,-1
+14,"networkServiceInfo('172.31.46.216',tomcat,tcp,'25',someUser)","LEAF",1
+13,14,-1
+15,"vulExists('172.31.46.216','CVE-2007-1858',tomcat,remoteExploit,privEscalation)","LEAF",1
+13,15,-1
+1,13,-1

@@ -1,0 +1,3 @@
+Cada dataset posssui informações sobre dados de tráfego de todas as duas máquinas da rede.
+Dessa forma não é necessário passar informações de alerta gerados por cada máquina para o 
+servidor orquestra.

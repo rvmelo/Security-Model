@@ -1,0 +1,27 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	files
+#open	2018-03-11-10-57-18
+#fields	ts	fuid	tx_hosts	rx_hosts	conn_uids	source	depth	analyzers	mime_type	filename	duration	local_orig	is_orig	seen_bytes	total_bytes	missing_bytes	overflow_bytes	timedout	parent_fuid	md5	sha1	sha256	extracted
+#types	time	string	set[addr]	set[addr]	set[string]	string	count	set[string]	string	string	interval	bool	bool	count	count	count	count	bool	string	string	string	string	string
+1520775846.961105	FudOtu2dDtbfcJJcSe	104.25.57.103	192.168.25.27	CkhPKt2EKd4sdqUiX8	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	1522	-	0	0	F	-	3370c097559aa4d0a0fded1835cb1d70	4659ea5e591a3c309c51e69d2bef5e463fd71ba8	-	-
+1520775846.961105	FJ0bIX1n0K5XqTlq38	104.25.57.103	192.168.25.27	CkhPKt2EKd4sdqUiX8	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	931	-	0	0	F	-	5e0e419b20ea575477f11b52e2c818e0	75cfd9bc5cefa104ecc1082d77e63392ccba5291	-	-
+1520775846.961105	FFSj8yuPKmslQ6OXk	104.25.57.103	192.168.25.27	CkhPKt2EKd4sdqUiX8	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	980	-	0	0	F	-	c790a56c69cbaf0bf3f30a40d0a2aecc	ae223cbf20191b40d7ffb4ea5701b65fdc68a1ca	-	-
+1520775848.100049	F1HkBH2Gh5dk8f2x9c	35.161.241.69	192.168.25.27	Cyas9k2uydqVO445wc	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	1379	-	0	0	F	-	b06339faba6b9da7ddfc9ef276d316ce	db5269e4eb9ab5e0ce26940bdfc4b0de87c84df1	-	-
+1520775848.100049	FsoSQf7kIikaIyjE6	35.161.241.69	192.168.25.27	Cyas9k2uydqVO445wc	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	1176	-	0	0	F	-	345eff15b7a49add451b65a7f4bdc6ae	1fb86b1168ec743154062e8c9cc5b171a4b7ccb4	-	-
+1520775881.262328	Frs6gk3COJ4wGTjzZi	134.193.137.101	192.168.25.27	C7b8wx2kAHeomJNVMe	HTTP	0	(empty)	text/html	-	0.000000	-	F	102	-	0	0	F	-	-	-	-	-
+1520775881.779804	Fxszga4rCwvi9JONh2	134.193.116.82	192.168.25.27	CZTlcl41qRupgB6fvh	HTTP	0	(empty)	text/html	-	0.000000	-	F	162	162	0	0	F	-	-	-	-	-
+1520775883.183688	FnVvUF20VGDDT5SVn6	172.217.162.170	192.168.25.27	Ccx0GB41O1HRuytQL1	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	1064	-	0	0	F	-	2ac654e03f89c86025d8a7fc2a85a29a	7473b8a0b54ee0a230b445d6f1287d39468df9db	-	-
+1520775883.183688	FGPSs01NM8LYokoVb6	172.217.162.170	192.168.25.27	Ccx0GB41O1HRuytQL1	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	1120	-	0	0	F	-	c4b81c95681acacb644c0770add564e1	eeacbd0cb452819577911e1e6203db262f84a318	-	-
+1520776146.877625	FTtYCm1y2EjPkHx0qc	179.181.134.12	192.168.25.27	CH33gl4WuKCqn9ceb	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	1339	-	0	0	F	-	551f8e567b395e184a21bd2388d131c1	44abc10538e71e16b3ef8481d73649d7b069b7f0	-	-
+1520776146.877625	FGTFbm2LzVqz1hezs7	179.181.134.12	192.168.25.27	CH33gl4WuKCqn9ceb	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	1068	-	0	0	F	-	17866ccbd224bd2ff9df48b95118f935	a6120fc0b4664fad0b3b6ffd5f7a33e561ddb87d	-	-
+1520776146.877625	F9156j2kvizXLcOrx3	179.181.134.12	192.168.25.27	CH33gl4WuKCqn9ceb	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	897	-	0	0	F	-	2e7db2a31d0e3da4b25f49b9542a2e1a	7359755c6df9a0abc3060bce369564c8ec4542a3	-	-
+1520776282.177843	Fcn9Z9zqts3ftl3e	173.194.27.184	192.168.25.27	COaqJg28o5yyjdvhZ7	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	2587	-	0	0	F	-	cc80ca3dd80152a31fd0ba68354ca535	d0fc36c75e9ebb7f29ab6dcb76a379843d568031	-	-
+1520776282.177843	F4yk0E4yvwzbdmDWu1	173.194.27.184	192.168.25.27	COaqJg28o5yyjdvhZ7	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	1068	-	0	0	F	-	17866ccbd224bd2ff9df48b95118f935	a6120fc0b4664fad0b3b6ffd5f7a33e561ddb87d	-	-
+1520776282.177843	FXvuOV1JRaZLpvt4u7	173.194.27.184	192.168.25.27	COaqJg28o5yyjdvhZ7	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	897	-	0	0	F	-	2e7db2a31d0e3da4b25f49b9542a2e1a	7359755c6df9a0abc3060bce369564c8ec4542a3	-	-
+1520776287.082440	FJRgSN3Pa8JkjKmtgb	172.217.30.14	192.168.25.27	CI8s2B3NBnFSHWDQqb	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	1927	-	0	0	F	-	b14bba2de4066de618c27071364bae21	5195bf29cc794bfee20b0feab5951b5a0a91ab39	-	-
+1520776287.082440	F9sCCt3ygRUJKvz2i9	172.217.30.14	192.168.25.27	CI8s2B3NBnFSHWDQqb	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	1068	-	0	0	F	-	17866ccbd224bd2ff9df48b95118f935	a6120fc0b4664fad0b3b6ffd5f7a33e561ddb87d	-	-
+1520776287.082440	FlzFiD1O9KcREJlNq1	172.217.30.14	192.168.25.27	CI8s2B3NBnFSHWDQqb	SSL	0	X509,SHA1,MD5	application/pkix-cert	-	0.000000	-	F	897	-	0	0	F	-	2e7db2a31d0e3da4b25f49b9542a2e1a	7359755c6df9a0abc3060bce369564c8ec4542a3	-	-
+#close	2018-03-11-10-57-23
